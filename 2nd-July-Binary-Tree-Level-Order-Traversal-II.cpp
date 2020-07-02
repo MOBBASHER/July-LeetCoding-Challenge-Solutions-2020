@@ -24,19 +24,23 @@ solution:
 class Solution {
 public:
     vector<vector<int>> levelOrderBottom(TreeNode* root) {
-      vector<vector<int>> ans;    // for storing the results
+      // for storing the results
+      vector<vector<int>> ans;    
       TreeNode* temp;             //temporary node
       
-      if(!root)                       
-          return ans;            // checking whether root is null or not 
+      if(!root)       // checking whether root is null or not                 
+          return ans;            
           
           queue<TreeNode*> q;    // creating queue for bfs algo
           q.push(root);          //push root value in queue. Now the queue contain root.
           while(!q.empty())      //looping while the queue is empty
           {
-              int n = q.size();  // taking the size of queue at every iteration
-              vector<int> v(n);  // making vector to be pushed into ans vector because we need vector of vector
-              for(int i=0;i<n;i++) //push all the values of queue at each level into v vector at its i'th position
+              // taking the size of queue at every iteration
+              int n = q.size(); 
+              // making vector to be pushed into ans vector because we need vector of vector
+              vector<int> v(n); 
+              //push all the values of queue at each level into v vector at its i'th position
+              for(int i=0;i<n;i++) 
               {
                   temp = q.front();
                   v[i]=temp->val;
