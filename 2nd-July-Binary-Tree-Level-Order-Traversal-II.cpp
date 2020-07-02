@@ -35,10 +35,11 @@ public:
           q.push(root);          //push root value in queue. Now the queue contain root.
           while(!q.empty())      //looping while the queue is empty
           {
-              // taking the size of queue at every iteration
-              int n = q.size(); 
-              // making vector to be pushed into ans vector because we need vector of vector
-              vector<int> v(n); 
+              
+              int n = q.size(); // taking the size of queue at every iteration
+             
+              vector<int> v(n);  // making vector to be pushed into ans vector because we need vector of vector
+              
               //push all the values of queue at each level into v vector at its i'th position
               for(int i=0;i<n;i++) 
               {
