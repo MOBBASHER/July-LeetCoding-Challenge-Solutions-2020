@@ -48,11 +48,11 @@ public:
                     q.push(temp->right);
  
               }
-               ans.push_back(v);   pushing v vector in ans vector to make it vector of vectors
+               ans.push_back(v);   //pushing v vector in ans vector to make it vector of vectors
             }
           
-        reverse(ans.begin(),ans.end());   reversing the ans vector because we need to print the level order traversal in reverse mannner.
-        return ans; returning the ans vector
+        reverse(ans.begin(),ans.end());   // reversing the ans vector because we need to print the level order traversal in reverse mannner.
+        return ans; //returning the ans vector
     }
 };
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
