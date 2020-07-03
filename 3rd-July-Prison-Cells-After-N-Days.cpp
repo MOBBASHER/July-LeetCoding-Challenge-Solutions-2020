@@ -42,7 +42,7 @@ Solution:
 class Solution {
 public:
     vector<int> prisonAfterNDays(vector<int>& cells, int N) {
-        N= N%14==0 ? 14 : N%14;    // The pattern will repeat after every 14 days. This mean 1st day and 15th day will have same cells so we dont have use all n days.
+        N= N%14==0 ? 14 : N%14;    //The pattern will repeat after every 14 days. This mean 1st day and 15th day will have same cells so we dont have use all n days.
        
         for(int k=0;k<N;k++)
         {
